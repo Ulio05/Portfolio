@@ -64,3 +64,43 @@ body {
 .menu a:hover {
     color: #ffd700;
 }
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin: 5px 0;
+}
+
+.footer-left ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-right {
+    max-width: 300px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
