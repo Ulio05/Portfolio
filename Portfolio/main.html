@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alexandre Dubois</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <div class="sky-container"></div>
+    
+    <div class="clouds-layer" id="cloudsLayer">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="cloud cloud-4"></div>
+        <div class="cloud cloud-5"></div>
+    </div>
+
+    <div class="content">
+        <section class="section">
+            <div class="card hero-card">
+                <h1>Alexandre Dubois</h1>
+                <h3>Étudiant en Informatique</h3>
+                <p>Passionné par le développement web et les nouvelles technologies. Actuellement en Master 1 à l'École Supérieure d'Informatique, je crée des expériences numériques innovantes et immersives.</p>
+                <a href="#about" class="btn">Découvrir mon parcours</a>
+                <a href="#projects" class="btn">Mes projets</a>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="card">
+                <h2>À propos de moi</h2>
+                <p>Étudiant passionné en informatique, je me spécialise dans le développement web full-stack et l'intelligence artificielle. Mon approche créative me permet de transformer des idées complexes en solutions élégantes et fonctionnelles.</p>
+                <p>Actuellement en recherche de stage pour approfondir mes compétences en développement d'applications modernes et en architecture cloud.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript, React, Vue.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Backend</h3>
+                        <p>Node.js, Python, PHP, Express, Django</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Base de données</h3>
+                        <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Outils & Autres</h3>
+                        <p>Git, Docker, AWS, Linux, Figma</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="card">
+                <h2>Mes Projets</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>🌦️ WeatherCloud</h3>
+                        <p>Application météo interactive avec visualisation 3D des données climatiques en temps réel. Utilise Three.js pour les animations et une API météo.</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>🎮 GameHub</h3>
+                        <p>Plateforme de jeux en ligne multijoueur avec chat en temps réel. Développée avec Node.js, Socket.io et React pour une expérience fluide.</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>🤖 ChatBot IA</h3>
+                        <p>Assistant virtuel intelligent utilisant le machine learning pour comprendre et répondre aux questions des utilisateurs de manière naturelle.</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>📱 TaskFlow</h3>
+                        <p>Application mobile de gestion de tâches avec synchronisation cloud. Interface intuitive et notifications intelligentes pour optimiser la productivité.</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="card">
+                <h2>Formation & Expérience</h2>
+                <div style="text-align: left; max-width: 600px;">
+                    <h3>🎓 Formation</h3>
+                    <p><strong>Master 1 Informatique</strong> - École Supérieure d'Informatique (2024-2025)</p>
+                    <p><strong>Licence Informatique</strong> - Université de Lyon (2021-2024)</p>
+                    <p><strong>Baccalauréat Scientifique</strong> - Mention Très Bien (2021)</p>
+                    
+                    <h3 style="margin-top: 2rem;">💼 Expérience</h3>
+                    <p><strong>Développeur Web Junior</strong> - Stage chez TechCloud (Été 2024)</p>
+                    <p><strong>Assistant IT</strong> - Service informatique universitaire (2023-2024)</p>
+                    <p><strong>Freelance</strong> - Développement de sites web pour PME (2022-2023)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="card">
+                <h2>Contact</h2>
+                <p>Prêt à collaborer sur des projets innovants ? N'hésitez pas à me contacter !</p>
+                <div style="margin-top: 2rem;">
+                    <a href="mailto:alexandre.dubois@email.com" class="btn">📧 Email</a>
+                    <a href="https://linkedin.com/in/alexandre-dubois" class="btn">💼 LinkedIn</a>
+                    <a href="https://github.com/alexandredubois" class="btn">🐙 GitHub</a>
+                    <a href="tel:+33123456789" class="btn">📱 Téléphone</a>
+                </div>
+                <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.8;">
+                    "L'innovation distingue un leader d'un suiveur" - Steve Jobs
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="scroll-indicator" id="scrollIndicator">
+        <div style="font-size: 2rem;">🌅</div>
+        <div>Scrollez pour voler vers l'est</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

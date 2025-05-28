@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+.scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.mountains {
+    background: url('img/montagnes.png') no-repeat center center/cover;
+}
+
+.forest {
+    background: url('img/forest.png') no-repeat center center/cover;
+}
+
+.city {
+    background: url('img/ville.png') no-repeat center center/cover;
+}
+
+.underground {
+    background: url('img/garage.png') no-repeat center center/cover;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.scene h1 {
+    animation: fadeIn 1.5s ease-out;
+}
+.scene {
+    position: relative;
+    background-attachment: fixed;
+}
+.menu {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin: 5px 0;
+}
+
+.footer-left ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-right {
+    max-width: 300px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
