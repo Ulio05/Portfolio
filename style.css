@@ -476,16 +476,21 @@
             top: 15px;
             border-radius: 50%;
             z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         .timeline-left {
             padding: 0 3rem 0 0;
             text-align: right;
+            margin-right:55%;
         }
 
         .timeline-right {
             padding: 0 0 0 3rem;
             text-align: left;
+            margin-left: 55%;
+            
         }
 
         .timeline-right::after {
