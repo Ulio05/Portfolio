@@ -140,3 +140,22 @@ const projectsData = {
         document.addEventListener('DOMContentLoaded', function() {
             resetCloudAnimation();
         });
+        // Effet de soumission du formulaire
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = document.querySelector('.submit-btn');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '✅ Message envoyé !';
+            btn.style.background = 'rgba(76, 175, 80, 0.8)';
+            
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = 'rgba(255, 255, 255, 0.2)';
+                this.reset();
+            }, 2000);
+        });
+
+        // Effet de parallaxe subtil
+        
