@@ -359,6 +359,12 @@
             font-size: 1rem;
         }
 
+        .skill-item p a, .activity-item p a{
+            color: #c471ed;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
         .section-title {
             color: white;
             font-size: 2rem;
