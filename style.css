@@ -319,8 +319,8 @@
         .about-text p {
             font-size: 1.2rem;
             line-height: 1.8;
+            color: black;
             margin-bottom: 1.5rem;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         .skills-activities {
@@ -351,7 +351,7 @@
         .skill-item h3, .activity-item h3 {
             color: rgba(0, 0, 0,0.9);
             font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .skill-item p, .activity-item p {
@@ -360,7 +360,7 @@
         }
 
         .skill-item p a, .activity-item p a{
-            color: #c471ed;
+            color: rgb(0, 204, 190);
             font-size: 1rem;
             text-decoration: none;
         }
@@ -690,8 +690,13 @@
             margin: 2%;
             padding: 0 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: end;
             align-items: center;
+        }
+        .footer-info{
+            text-align: right;
+            align-self: end;
+            margin-right: 20%;
         }
 
         .footer-info h2 {
@@ -722,6 +727,11 @@
             color: white;
             transition: all 0.3s ease;
             font-size: 20px;
+        }
+        .social-link img{
+            width: 30px;
+            height: 30px;
+            margin: 10px;
         }
 
         .social-link:hover {
@@ -993,3 +1003,96 @@
                 font-size: 2rem;
             }
         }
+        /* Responsive amélioré */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .skills-grid, .activities-grid {
+        grid-template-columns: 1fr;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .timeline-left, .timeline-right {
+        margin: 0;
+        padding: 0 1rem;
+        text-align: left;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .skills-grid, .activities-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .timeline::after {
+        left: 20px;
+    }
+    .timeline-left, .timeline-right {
+        margin: 0;
+        padding-left: 2rem;
+        text-align: left;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin: 0;
+    }
+    .modal-content {
+        padding: 1rem;
+        max-width: 98%;
+        max-height: 90%;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero h3 {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Très petits écrans */
+@media (max-width: 480px) {
+    .container {
+        padding: 0.5rem;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero h3 {
+        font-size: 1rem;
+    }
+    .modal-content {
+        padding: 0.5rem;
+    }
+    .btn, .btn-prj, .submit-btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+    .footer-info h2 {
+        font-size: 1.2rem;
+    }
+    .footer-info p {
+        font-size: 0.9rem;
+    }
+}
