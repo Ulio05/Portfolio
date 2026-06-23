@@ -22,13 +22,28 @@
     </div>
 
     <!-- Navbar -->
-    <a href="#" class="open-btn icon icon-menu"></a>
-    <nav class="navbar burger" id="navbar">
-        <a href="#" class="close-btn">X</a>
-        <div class="nav-container">
-            
-            <ul class="nav-menu">
+    <header class="site-header">
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
                 <a href="#" class="nav-logo">Jules Mangel</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#hero">Accueil</a></li>
+                    <li class="nav-item"><a href="#about">À propos</a></li>
+                    <li class="nav-item"><a href="#Projects">Projets</a></li>
+                    <li class="nav-item"><a href="#experience">Parcours</a></li>
+                    <li class="nav-item"><a href="#contact">Me Contacter</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <a href="#" class="open-btn icon icon-menu" id="menuOpen" aria-label="Ouvrir le menu"></a>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <div class="mobile-nav-inner">
+            <a href="#" class="close-btn" id="menuClose" aria-label="Fermer le menu">✕</a>
+            <a href="#" class="nav-logo mobile-logo">Jules Mangel</a>
+            <ul class="nav-menu mobile-menu">
                 <li class="nav-item"><a href="#hero">Accueil</a></li>
                 <li class="nav-item"><a href="#about">À propos</a></li>
                 <li class="nav-item"><a href="#Projects">Projets</a></li>
@@ -58,8 +73,9 @@
                 <div class="about-content">
                     <div class="about-text">
                         <h2>À propos de moi</h2>
-                        <p>Étudiant passionné en informatique, j'aimerais me spécialiser dans la programmation de systéme et dans le développement web full-stack. Je m'intéresse aussi au fonctionnement de l'intelligence artificielle.</p>
+                        <p>Étudiant passionné en informatique, j'aimerais me spécialiser dans la programmation de systéme et dans le développement web full-stack. Je m'intéresse aussi au fonctionnement poussé de Git.</p>
                         <p>Actuellement en recherche de stage pour approfondir mes compétences en développement d'applications modernes et en développement web.</p>
+                        <a href="./CV-Jules_MANGEL.pdf" class="btn" target="_blank">Mon CV</a>
                     </div>
                     
                     <div class="skills-activities">
@@ -68,7 +84,7 @@
                             <div class="skills-grid">
                                 <div class="skill-item">
                                     <h3>Frontend</h3>
-                                    <p>HTML5, CSS3, JavaScript</p>
+                                    <p>HTML5, CSS3, JavaScript, PHP</p>
                                 </div>
                                 <div class="skill-item">
                                     <h3>Backend</h3>
@@ -80,7 +96,9 @@
                                 </div>
                                 <div class="skill-item">
                                     <h3>Soft skills</h3>
-                                    <p></p>
+                                    <p>
+                                        Communication, Adaptabilité, Curiosité, Créativité
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -90,8 +108,12 @@
                             <h3 class="section-title">Activités & Passions</h3>
                             <div class="activities-grid">
                                 <div class="activity-item">
+                                    <h3>Secrétaire Prologin</h3>
+                                    <p>Prologin étant une association qui a pour but de promouvoir l'informatique envers les jeunes,c'est pour ça qu'ils organisent des <a href="girlscancode.fr">Girls Can Code </a>, <a href="">le Concour National de programmation</a> et des ateliers d'initiation à l'informatique.</p>
+                                </div>
+                                <div class="activity-item">
                                     <h3>Résponsable sud Prologin</h3>
-                                    <p>Je suis chargé d'organiser des évenements Prologin dans tout la région sud. Prologin étant une association qui a pour but de promouvoir l'informatique envers les jeunes,c'est pour ça qu'ils organisent des <a href="girlscancode.fr">Girls Can Code </a>, <a href="">le Concour National de programmation</a> et des ateliers d'initiation à l'informatique.</p>
+                                    <p>Je suis chargé d'organiser des évenements Prologin dans tout la région sud. </p>
                                 </div>
                                 <div class="activity-item">
                                     <h3>Résponsable communication Prologin</h3>
@@ -114,7 +136,27 @@
 
     <div class="container" id="Projects">
         <h1 class="section-title">Mes Projets Informatiques</h1>
+        <div class="project-card" onclick="openProject('photos')">
+                <h3>Phototéque du LESSEM</h3>
+                <p>Applications web répertoriant les photos du LESSEM. Avec un import des photos passant par Grist</p>
+                <div class="btn">Découvrir le projet</div>
+            </div>
         <div class="projects-grid">
+            <div class="project-card" onclick="openProject('bees')">
+                <h3>Bibliothéque en ligne</h3>
+                <p>Site web utilisant une api open.library pour pouvoir filtrer les livres.</p>
+                <div class="btn">Découvrir le projet</div>
+            </div>
+            <div class="project-card" onclick="openProject('bees')">
+                <h3>Tilya</h3>
+                <p>Applications web pour aider les aidants, à travers un calendrier collaboratif</p>
+                <div class="btn">Découvrir le projet</div>
+            </div>
+            <div class="project-card" onclick="openProject('bees')">
+                <h3>Fest Event</h3>
+                <p>Création d'une application Java FX pour organiser des événements, dans les lieux de spectacles</p>
+                <div class="btn">Découvrir le projet</div>
+            </div>
             <div class="project-card" onclick="openProject('bees')">
                 <h3>Site West-Coast Bees</h3>
                 <p>Création d'un site web pour vendre des produits venant d'abeilles.</p>
@@ -163,12 +205,20 @@
             <div class="container">
                 <h2 style="color: white; font-size: 3rem; text-align: center; margin-bottom: 3rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Mon Parcours Scolaire</h2>
                 <div class="timeline">
+                    <div class="timeline-item timeline-right">
+                        <div class="timeline-content">
+                            <h3>Stage développement de la photothèque naturaliste du LESSEM</h3>
+                            <p><strong>INRAE dans l'unité du LESSEM</strong></p>
+                            <p>Stage de secondes années de BUT </p>
+                            <span class="timeline-date">avril-juin, 2026</span>
+                        </div>
+                    </div>
                     <div class="timeline-item timeline-left">
                         <div class="timeline-content">
-                            <h3>🎓 BUT 1 Informatique</h3>
+                            <h3>🎓 BUT Informatique</h3>
                             <p><strong>IUT2 Université Grenoble Alpes</strong></p>
-                            <p>Premiére année de BUT informatique pour apprendre le développement web et la programation.</p>
-                            <span class="timeline-date">2024-2025</span>
+                            <p>Formation en BUT informatique pour apprendre le développement web et la programation.</p>
+                            <span class="timeline-date">2024-2027</span>
                         </div>
                     </div>
                     <div class="timeline-item timeline-right">
@@ -207,10 +257,9 @@
             </div>
         </section>
     </div>
-</body>
-<footer>
-        <div class="container" id ="contact">
-        <section class="contact-section">
+
+    <section class="contact-section" id="contact">
+        <div class="container">
             <h1 class="contact-title">Contact</h1>
             
             <div class="contact-info">
@@ -261,9 +310,9 @@
                     ✈️ Envoyer le message
                 </button>
             </form>
-        </section>
-    </div>
-    
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-info">
@@ -274,11 +323,11 @@
             <div class="social-links">
                 <a href="https://github.com/Ulio05" class="social-link" title="GitHub">🐙</a>
                 <a href="#" class="social-link" title="LinkedIn">💼</a>
-                <a href="mailito:jules.mangel@etu.univ-grenoble-alpes.fr" class="social-link" title="Mail">📧 </a>
+                <a href="mailto:jules.mangel@etu.univ-grenoble-alpes.fr" class="social-link" title="Mail">📧</a>
             </div>
         </div>
     </footer>
-</footer>
 
     <script src="script.js"></script>
+</body>
 </html>

@@ -1,5 +1,17 @@
 const projectsData = {
-            bees: {
+    photos: {
+                title: "Phototéque naturaliste du LESSEM",
+                description: "Applications web répertoriant les photos du LESSEM. Avec un import des photos passant par Grist",
+                fullDescription: "Dans le cadre d'un stage au sein de l'INRAE, j'ai participé au développement d'une photothèque scientifique destinée aux chercheurs du laboratoire LESSEM. L'objectif du projet était de faciliter le stockage, l'organisation et la recherche de plusieurs milliers de photographies utilisées dans le cadre d'études environnementales et botaniques.\nJ'ai travaillé sur l'amélioration de l'application web existante en développant de nouvelles fonctionnalités de recherche multicritère (date, auteur, thème), l'affichage détaillé des métadonnées et l'amélioration de l'expérience utilisateur. J'ai également conçu un système d'importation automatisé en Python permettant d'extraire les métadonnées des photographies et d'alimenter la base de données de manière fiable et efficace.\nLe projet m'a aussi permis de mettre en place des bonnes pratiques de développement avec GitLab, notamment la gestion des branches, la documentation technique et l'automatisation du déploiement via une chaîne CI/CD.",
+                technologies: ["HTML", "CSS3", "PHP", "JavaScript", "Python", "Bash", "PostgreSQL", "GIT"],
+                features: [
+                    "Visuel assimilant deux couleurs opposé",
+                    "Des pages explicites sur leur meessage",
+                    "Création de produit originaux"
+                ],
+                challenges: "Le principal défi était la communication avec le client, ayant peu d'idée et ayant du mal à l'éxprimer en anglais. Nous avons du proposer beaucoup d'idées différente et essayer d'anticiper les besoins.",
+            },        
+    bees: {
                 title: "Site West Coast bees",
                 description: "Un site web permettant de vendre des produits liée aux miel. Projet donner dans le cadre d'un projet en cour d'Anglais où nous devions crée un site web depuis la demande d'un groupe de clients et où tout nos communication devais ce faire en anglais professionnel.",
                 fullDescription: "Le site web étant fait en groupe de 5 j'était en charge de communiquer avec les clients en montrant aussi nos avancées et en le mettant en valeur. J'ai aussi efféctuer une grande partie de la maquette pour montrer à mon groupe l'architecture de ce site. J'ai aider a programmer la page produit et inventer chaque produit à vendre en leur trouvant des prix raisonnables.\n Ce site web avait 5 pages différentes avec pour consignes principale: qu'il soit responsive, et qu'il soit composé de jaune et de vert. En créant ce site les clients nous ont fait plusieur retour et fait faire plusieurs modification pour qu'ils atteignent leur attente.",
@@ -183,34 +195,27 @@ const projectsData = {
 
         // Effet de parallaxe subtil
         
-// Récupère le DOM correspondant à la barre de navigation
-const burgerMenu = document.querySelector('nav');
-
-// Récupère le DOM correspondant à la croix de fermeture
-const closeBtn = burgerMenu.querySelector('a.close-btn');
-
-// Récupère le DOM correspondant au bouton "burger"
-const openBtn = document.querySelector('a.open-btn');
-
-console.log(burgerMenu, closeBtn, openBtn);
+// Récupère le DOM correspondant au menu mobile
+const mobileNav = document.getElementById('mobileNav');
+const openBtn = document.getElementById('menuOpen');
+const closeBtn = document.getElementById('menuClose');
 
 openBtn.addEventListener('click', function (e) {
-    // Supprime le comportement par défaut (changement de page)
-    // lors d'un clic sur le lien
-    e.preventDefault(); 
-
-    // Récupère la liste des classes de l'élément nav
-    // Et ajoute la classe "visible"
-    burgerMenu.classList.add('visible');
+    e.preventDefault();
+    mobileNav.classList.add('visible');
+    mobileNav.setAttribute('aria-hidden', 'false');
 });
 
 closeBtn.addEventListener('click', function (e) {
-    // Supprime le comportement par défaut (changement de page)
-    // lors d'un clic sur le lien
-    e.preventDefault(); 
+    e.preventDefault();
+    mobileNav.classList.remove('visible');
+    mobileNav.setAttribute('aria-hidden', 'true');
+});
 
-    // Récupère la liste des classes de l'élément nav
-    // Et retire la classe "visible"
-    burgerMenu.classList.remove('visible');
+mobileNav.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', function () {
+        mobileNav.classList.remove('visible');
+        mobileNav.setAttribute('aria-hidden', 'true');
+    });
 });
         
