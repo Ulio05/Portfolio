@@ -1,7 +1,7 @@
 const projectsData = {
     photos: {
-                title: "Phototéque naturaliste du LESSEM",
-                description: "Applications web répertoriant les photos du LESSEM. Avec un import des photos passant par Grist",
+                title: "Photothèque naturaliste du LESSEM",
+                description: "Application web répertoriant les photos du LESSEM, avec un import des photos via Grist.",
                 fullDescription: "Dans le cadre d'un stage au sein d'INRAE, j'ai participé au développement d'une photothèque scientifique destinée aux chercheurs du laboratoire du LESSEM. L'objectif du projet était de faciliter le stockage, l'organisation et la recherche de plusieurs milliers de photographies (40 000 photos) utilisées dans le cadre d'études environnementales et botaniques.\nJ'ai travaillé sur l'amélioration de l'application web existante en développant de nouvelles fonctionnalités de recherche multicritère (date, auteur, thème, ...), l'affichage détaillé des métadonnées et l'amélioration de l'expérience utilisateur. J'ai également conçu un système d'importation automatisé en Python permettant d'extraire les métadonnées des photographies et d'alimenter la base de données de manière fiable et efficace.\nLe projet m'a aussi permis de mettre en place des bonnes pratiques de développement avec GitLab, notamment la gestion des branches, la documentation technique et l'automatisation du déploiement via une chaîne CI/CD.",
                 technologies: ["HTML", "CSS3", "PHP", "JavaScript", "Python", "Bash", "PostgreSQL", "GIT"],
                 features: [
@@ -9,23 +9,23 @@ const projectsData = {
                     "Recherche multicritère",
                     "Importation automatisée des photos et métadonnées"
                 ],
-                challenges: "Le principal défi était la communication avec le client, ayant peu d'idée et ayant du mal à l'éxprimer en anglais. Nous avons du proposer beaucoup d'idées différente et essayer d'anticiper les besoins.",
+                challenges: "Le principal défi était la communication avec le client, ayant peu d'idées et ayant du mal à l'exprimer en anglais. Nous avons dû proposer beaucoup d'idées différentes et essayer d'anticiper les besoins.",
             },        
     bees: {
                 title: "Site West Coast bees",
-                description: "Un site web permettant de vendre des produits liée aux miel. Projet donner dans le cadre d'un projet en cour d'Anglais où nous devions crée un site web depuis la demande d'un groupe de clients et où tout nos communication devais ce faire en anglais professionnel.",
-                fullDescription: "Le site web étant fait en groupe de 5 j'était en charge de communiquer avec les clients en montrant aussi nos avancées et en le mettant en valeur. J'ai aussi efféctuer une grande partie de la maquette pour montrer à mon groupe l'architecture de ce site. J'ai aider a programmer la page produit et inventer chaque produit à vendre en leur trouvant des prix raisonnables.\n Ce site web avait 5 pages différentes avec pour consignes principale: qu'il soit responsive, et qu'il soit composé de jaune et de vert. En créant ce site les clients nous ont fait plusieur retour et fait faire plusieurs modification pour qu'ils atteignent leur attente.",
+                description: "Un site web permettant de vendre des produits liés au miel. Projet donné dans le cadre d'un projet en cours d'anglais où nous devions créer un site web selon la demande d'un groupe de clients et où toute notre communication devait se faire en anglais professionnel.",
+                fullDescription: "Le site web étant réalisé en groupe de 5, j'étais en charge de communiquer avec les clients en montrant aussi nos avancées et en le mettant en valeur. J'ai aussi effectué une grande partie de la maquette pour montrer à mon groupe l'architecture de ce site. J'ai aidé à programmer la page produit et inventer chaque produit à vendre en leur trouvant des prix raisonnables.\nCe site web avait 5 pages différentes avec pour consignes principales : qu'il soit responsive et qu'il soit composé de jaune et de vert. En créant ce site, les clients nous ont fait plusieurs retours et demandé plusieurs modifications pour atteindre leurs attentes.",
                 technologies: ["HTML", "CSS3", "GIT"],
                 features: [
-                    "Visuel assimilant deux couleurs opposé",
-                    "Des pages explicites sur leur meessage",
-                    "Création de produit originaux"
+                    "Visuel assimilant deux couleurs opposées",
+                    "Des pages explicites sur leur message",
+                    "Création de produits originaux"
                 ],
-                challenges: "Le principal défi était la communication avec le client, ayant peu d'idée et ayant du mal à l'éxprimer en anglais. Nous avons du proposer beaucoup d'idées différente et essayer d'anticiper les besoins.",
+                challenges: "Le principal défi était la communication avec le client, ayant peu d'idées et ayant du mal à l'exprimer en anglais. Nous avons dû proposer beaucoup d'idées différentes et essayer d'anticiper les besoins.",
             },
             atos: {
                 title: "Site web Atos",
-                description: "Un site web s'inspirant de celui du vrai mais modifier pour etre compréhensible par des élèves de 3éme, pour leur stage de fin d'années.",
+                description: "Un site web s'inspirant de celui du vrai mais modifié pour être compréhensible par des élèves de 3e, pour leur stage de fin d'année.",
                 fullDescription: "GameHub est une plateforme sociale de gaming qui permet aux joueurs de se connecter, de jouer ensemble et de communiquer en temps réel. Le projet inclut plusieurs mini-jeux, un système de ranking, et une architecture scalable pour supporter des milliers d'utilisateurs simultanés.",
                 technologies: ["HTML", "CSS3", "Git"],
                 features: [
@@ -46,7 +46,7 @@ const projectsData = {
                 features: [
                     "Compréhension du langage naturel avancée",
                     "Apprentissage adaptatif des préférences utilisateur",
-                    "Intégration avec multiple APIs (météo, news, traduction)",
+                    "Intégration avec plusieurs API (météo, news, traduction)",
                     "Interface conversationnelle intuitive",
                     "Historique des conversations persistant",
                     "Support multilingue (FR, EN, ES)"
