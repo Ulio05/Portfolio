@@ -2,12 +2,12 @@ const projectsData = {
     photos: {
                 title: "Phototéque naturaliste du LESSEM",
                 description: "Applications web répertoriant les photos du LESSEM. Avec un import des photos passant par Grist",
-                fullDescription: "Dans le cadre d'un stage au sein de l'INRAE, j'ai participé au développement d'une photothèque scientifique destinée aux chercheurs du laboratoire LESSEM. L'objectif du projet était de faciliter le stockage, l'organisation et la recherche de plusieurs milliers de photographies utilisées dans le cadre d'études environnementales et botaniques.\nJ'ai travaillé sur l'amélioration de l'application web existante en développant de nouvelles fonctionnalités de recherche multicritère (date, auteur, thème), l'affichage détaillé des métadonnées et l'amélioration de l'expérience utilisateur. J'ai également conçu un système d'importation automatisé en Python permettant d'extraire les métadonnées des photographies et d'alimenter la base de données de manière fiable et efficace.\nLe projet m'a aussi permis de mettre en place des bonnes pratiques de développement avec GitLab, notamment la gestion des branches, la documentation technique et l'automatisation du déploiement via une chaîne CI/CD.",
+                fullDescription: "Dans le cadre d'un stage au sein d'INRAE, j'ai participé au développement d'une photothèque scientifique destinée aux chercheurs du laboratoire du LESSEM. L'objectif du projet était de faciliter le stockage, l'organisation et la recherche de plusieurs milliers de photographies (40 000 photos) utilisées dans le cadre d'études environnementales et botaniques.\nJ'ai travaillé sur l'amélioration de l'application web existante en développant de nouvelles fonctionnalités de recherche multicritère (date, auteur, thème, ...), l'affichage détaillé des métadonnées et l'amélioration de l'expérience utilisateur. J'ai également conçu un système d'importation automatisé en Python permettant d'extraire les métadonnées des photographies et d'alimenter la base de données de manière fiable et efficace.\nLe projet m'a aussi permis de mettre en place des bonnes pratiques de développement avec GitLab, notamment la gestion des branches, la documentation technique et l'automatisation du déploiement via une chaîne CI/CD.",
                 technologies: ["HTML", "CSS3", "PHP", "JavaScript", "Python", "Bash", "PostgreSQL", "GIT"],
                 features: [
-                    "Visuel assimilant deux couleurs opposé",
-                    "Des pages explicites sur leur meessage",
-                    "Création de produit originaux"
+                    "Voir des photos avec leurs métadonnées",
+                    "Recherche multicritère",
+                    "Importation automatisée des photos et métadonnées"
                 ],
                 challenges: "Le principal défi était la communication avec le client, ayant peu d'idée et ayant du mal à l'éxprimer en anglais. Nous avons du proposer beaucoup d'idées différente et essayer d'anticiper les besoins.",
             },        
