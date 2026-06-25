@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Jules Mangel</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
 
 </head>
 <body>
@@ -22,10 +22,28 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">Jules Mangel</a>
-            <ul class="nav-menu">
+    <header class="site-header">
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">Jules Mangel</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#hero">Accueil</a></li>
+                    <li class="nav-item"><a href="#about">À propos</a></li>
+                    <li class="nav-item"><a href="#Projects">Projets</a></li>
+                    <li class="nav-item"><a href="#experience">Parcours</a></li>
+                    <li class="nav-item"><a href="#contact">Me Contacter</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <a href="#" class="open-btn icon icon-menu" id="menuOpen" aria-label="Ouvrir le menu"></a>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <div class="mobile-nav-inner">
+            <a href="#" class="close-btn" id="menuClose" aria-label="Fermer le menu">✕</a>
+            <a href="#" class="nav-logo mobile-logo">Jules Mangel</a>
+            <ul class="nav-menu mobile-menu">
                 <li class="nav-item"><a href="#hero">Accueil</a></li>
                 <li class="nav-item"><a href="#about">À propos</a></li>
                 <li class="nav-item"><a href="#Projects">Projets</a></li>
@@ -41,7 +59,7 @@
             <div class="container">
                 <h1>Jules Mangel</h1>
                 <h3>Étudiant en Informatique</h3>
-                <p>Passionné par la programation et les nouvelles technologies. Actuellement en premiére année de BUT informatique à l'IUT2 de Grenoble.</p>
+                <p>Passionné par la programmation et les nouvelles technologies. Actuellement en seconde année de BUT informatique à l'IUT2 de Grenoble.</p>
                 <div class="hero-buttons">
                     <a href="#about" class="btn">Découvrir mon parcours</a>
                     <a href="#Projects" class="btn">Mes projets</a>
@@ -55,8 +73,9 @@
                 <div class="about-content">
                     <div class="about-text">
                         <h2>À propos de moi</h2>
-                        <p>Étudiant passionné en informatique, j'aimerais me spécialiser dans la programmation de systéme et dans le développement web full-stack. Je m'intéresse aussi au fonctionnement de l'intelligence artificielle.</p>
+                        <p>Étudiant passionné en informatique, j'aimerais me spécialiser dans la programmation de système et dans le développement web full-stack. Je m'intéresse aussi au fonctionnement poussé de Git.</p>
                         <p>Actuellement en recherche de stage pour approfondir mes compétences en développement d'applications modernes et en développement web.</p>
+                        <a href="./CV-Jules_MANGEL.pdf" class="btn" target="_blank">Mon CV</a>
                     </div>
                     
                     <div class="skills-activities">
@@ -65,7 +84,7 @@
                             <div class="skills-grid">
                                 <div class="skill-item">
                                     <h3>Frontend</h3>
-                                    <p>HTML5, CSS3, JavaScript</p>
+                                    <p>HTML5, CSS3, JavaScript, PHP</p>
                                 </div>
                                 <div class="skill-item">
                                     <h3>Backend</h3>
@@ -77,31 +96,39 @@
                                 </div>
                                 <div class="skill-item">
                                     <h3>Soft skills</h3>
-                                    <p></p>
+                                    <p>
+                                        Communication, Adaptabilité, Curiosité, Créativité
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h3 class="section-title">Activités & Passions</h3>
-                    <div class="activities-grid">
-                        <div class="activity-item">
-                            <h3>Responsable Sud Prologin</h3>
-                            <p>Je suis chargé d'organiser des événements Prologin dans toute la région Sud. Prologin est une association qui a pour but de promouvoir l'informatique auprès des jeunes, c'est pourquoi elle organise des <a href="girlscancode.fr">Girls Can Code</a>, <a href="">le Concours National de Programmation</a> et des ateliers d'initiation à l'informatique.</p>
+                <div>
+                            <h3 class="section-title">Activités & Passions</h3>
+                            <div class="activities-grid">
+                                <div class="activity-item">
+                                    <h3>Secrétaire Prologin</h3>
+                                    <p>Prologin étant une association qui a pour but de promouvoir l'informatique envers les jeunes, c'est pour ça qu'ils organisent des <a href="girlscancode.fr">Girls Can Code</a>, <a href="">le Concours national de programmation</a> et des ateliers d'initiation à l'informatique.</p>
+                                </div>
+                                <div class="activity-item">
+                                    <h3>Responsable sud Prologin</h3>
+                                    <p>Je suis chargé d'organiser des événements Prologin dans toute la région sud.</p>
+                                </div>
+                                <div class="activity-item">
+                                    <h3>Responsable communication Prologin</h3>
+                                    <p>Chargé de toute la communication externe et interne de Prologin, allant de la création de support visuel pour nos stages à communiquer avec des académies et des grandes entreprises pour leur parler de Prologin.</p>
+                                </div>
+                                <div class="activity-item">
+                                    <h3>Animateur</h3>
+                                    <p>Tous les étés depuis que j'ai 16 ans, je travaille en tant qu'animateur avec les 3-6 ans.</p>
+                                </div>
+                                <div class="activity-item">
+                                    <h3>Théâtre</h3>
+                                    <p>Étant un ancien comédien et faisant partie d'une troupe pendant mon lycée, je suis un grand fan de théâtre.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="activity-item">
-                            <h3>Responsable communication Prologin</h3>
-                            <p>Chargé de toute la communication externe et interne de Prologin, allant de la création de supports visuels pour nos stages à la communication avec des académies et de grandes entreprises pour leur présenter Prologin.</p>
-                        </div>
-                        <div class="activity-item">
-                            <h3>Animateur</h3>
-                            <p>Tous les étés depuis que j'ai 16 ans, je travaille en tant qu'animateur avec les 3-6 ans.</p>
-                        </div>
-                        <div class="activity-item">
-                            <h3>Théâtre</h3>
-                            <p>Étant un ancien comédien et ayant fait partie d'une troupe pendant mon lycée, je suis un grand fan de théâtre.</p>
-                        </div>
-                    </div>
             </div>
         </section>
 
@@ -109,14 +136,34 @@
 
     <div class="container" id="Projects">
         <h1 class="section-title">Mes Projets Informatiques</h1>
+        <div class="project-card" onclick="openProject('photos')">
+                <h3>Photothèque du LESSEM</h3>
+                <p>Application web répertoriant les photos du LESSEM, avec un import des photos via Grist.</p>
+                <div class="btn">Découvrir le projet</div>
+            </div>
         <div class="projects-grid">
+            <div class="project-card" onclick="openProject('bees')">
+                <h3>Bibliothèque en ligne</h3>
+                <p>Site web utilisant une API openlibrary pour filtrer les livres.</p>
+                <div class="btn">Découvrir le projet</div>
+            </div>
+            <div class="project-card" onclick="openProject('bees')">
+                <h3>Tilya</h3>
+                <p>Application web pour aider les aidants, à travers un calendrier collaboratif.</p>
+                <div class="btn">Découvrir le projet</div>
+            </div>
+            <div class="project-card" onclick="openProject('bees')">
+                <h3>Fest Event</h3>
+                <p>Création d'une application Java FX pour organiser des événements, dans les lieux de spectacles</p>
+                <div class="btn">Découvrir le projet</div>
+            </div>
             <div class="project-card" onclick="openProject('bees')">
                 <h3>Site West-Coast Bees</h3>
                 <p>Création d'un site web pour vendre des produits venant d'abeilles.</p>
                 <div class="btn">Découvrir le projet</div>
             </div>
             <div class="project-card" onclick="openProject('atos')">
-                <h3>Site Atos simplifiées</h3>
+                <h3>Site Atos simplifié</h3>
                 <p>Création d'un site web pour vendre des produits venant d'abeilles.</p>
                 <div class="btn">Découvrir le projet</div>
             </div>
@@ -158,19 +205,27 @@
             <div class="container">
                 <h2 style="color: white; font-size: 3rem; text-align: center; margin-bottom: 3rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Mon Parcours Scolaire</h2>
                 <div class="timeline">
+                    <div class="timeline-item timeline-right">
+                        <div class="timeline-content">
+                            <h3>🔍 Stage développement de la photothèque naturaliste du LESSEM</h3>
+                            <p><strong>INRAE dans l'unité du LESSEM</strong></p>
+                            <p>Stage de deuxième année de BUT</p>
+                            <span class="timeline-date">avril-juin, 2026</span>
+                        </div>
+                    </div>
                     <div class="timeline-item timeline-left">
                         <div class="timeline-content">
-                            <h3>🎓 BUT 1 Informatique</h3>
+                            <h3>🎓 BUT Informatique</h3>
                             <p><strong>IUT2 Université Grenoble Alpes</strong></p>
-                            <p>Premiére année de BUT informatique pour apprendre le développement web et la programation.</p>
-                            <span class="timeline-date">2024-2025</span>
+                            <p>Formation en BUT informatique pour apprendre le développement web et la programmation.</p>
+                            <span class="timeline-date">2024-2027</span>
                         </div>
                     </div>
                     <div class="timeline-item timeline-right">
                         <div class="timeline-content">
-                            <h3>💼 Prémiére année de prépa intégrés</h3>
+                            <h3>💼 Première année de prépa intégrée</h3>
                             <p><strong>Epita Lyon</strong></p>
-                            <p>Premiére année de prépa intégrés à Epita Lyon pour découvrir les fondamentales de l'informatique.</p>
+                            <p>Première année de prépa intégrée à Epita Lyon pour découvrir les fondamentaux de l'informatique.</p>
                             <span class="timeline-date">2023-2024</span>
                         </div>
                     </div>
@@ -184,9 +239,9 @@
                     </div>
                     <div class="timeline-item timeline-right">
                         <div class="timeline-content">
-                            <h3>💻 Scolarité aux Etats-Unis</h3>
+                            <h3>💻 Scolarité aux États-Unis</h3>
                             <p><strong>Sunset Elementary/Middle School</strong></p>
-                            <p>Pendant trois ans j'ai eu la chance de vivre aux états-unis et j'ai pu faire mon CM1 jusqu'a ma 6éme dans une école américaine.</p>
+                            <p>Pendant trois ans, j'ai eu la chance de vivre aux États-Unis et j'ai pu faire mon CM1 jusqu'à ma 6e dans une école américaine.</p>
                             <span class="timeline-date">2014-2017</span>
                         </div>
                     </div>
@@ -202,10 +257,9 @@
             </div>
         </section>
     </div>
-</body>
-<footer>
-        <div class="container" id ="contact">
-        <section class="contact-section">
+
+    <section class="contact-section" id="contact">
+        <div class="container">
             <h1 class="contact-title">Contact</h1>
             
             <div class="contact-info">
@@ -256,9 +310,9 @@
                     ✈️ Envoyer le message
                 </button>
             </form>
-        </section>
-    </div>
-    
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-info">
@@ -267,17 +321,15 @@
             </div>
             
             <div class="social-links">
-                <a href="https://github.com/Ulio05" class="social-link fa " title="GitHub"><img src="logo/github-mark.png" style="height: ;"></a>
-                <a href="www.linkedin.com/in/jules-mangel-297072335" class="social-link" title="LinkedIn"><img src="logo/linkedin.png"></a>
-                <a href="mailito:jules.mangel@etu.univ-grenoble-alpes.fr" class="social-link" title="Mail">📧</a>
+                <a href="https://github.com/Ulio05" class="social-link" title="GitHub"><svg aria-hidden="true" focusable="false" class="octicon octicon-mark-github" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M12 1C5.9225 1 1 5.9225 1 12C1 16.8675 4.14875 20.9787 8.52125 22.4362C9.07125 22.5325 9.2775 22.2025 9.2775 21.9137C9.2775 21.6525 9.26375 20.7862 9.26375 19.865C6.5 20.3737 5.785 19.1912 5.565 18.5725C5.44125 18.2562 4.905 17.28 4.4375 17.0187C4.0525 16.8125 3.5025 16.3037 4.42375 16.29C5.29 16.2762 5.90875 17.0875 6.115 17.4175C7.105 19.0812 8.68625 18.6137 9.31875 18.325C9.415 17.61 9.70375 17.1287 10.02 16.8537C7.5725 16.5787 5.015 15.63 5.015 11.4225C5.015 10.2262 5.44125 9.23625 6.1425 8.46625C6.0325 8.19125 5.6475 7.06375 6.2525 5.55125C6.2525 5.55125 7.17375 5.2625 9.2775 6.67875C10.1575 6.43125 11.0925 6.3075 12.0275 6.3075C12.9625 6.3075 13.8975 6.43125 14.7775 6.67875C16.8813 5.24875 17.8025 5.55125 17.8025 5.55125C18.4075 7.06375 18.0225 8.19125 17.9125 8.46625C18.6138 9.23625 19.04 10.2125 19.04 11.4225C19.04 15.6437 16.4688 16.5787 14.0213 16.8537C14.42 17.1975 14.7638 17.8575 14.7638 18.8887C14.7638 20.36 14.75 21.5425 14.75 21.9137C14.75 22.2025 14.9563 22.5462 15.5063 22.4362C19.8513 20.9787 23 16.8537 23 12C23 5.9225 18.0775 1 12 1Z"></path></svg></a>
+                <a href="#" class="social-link" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg></a>
+                <a href="mailto:jules.mangel@etu.univ-grenoble-alpes.fr" class="social-link" title="Mail">📧</a>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>© 2025 Jules Mangel. Créé avec ❤️ et beaucoup de monster</p>
-        </div>
     </footer>
-</footer>
 
     <script src="script.js"></script>
+</body>
 </html>
